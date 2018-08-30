@@ -1,0 +1,49 @@
+{
+  "name": "eosio-mongodb-queries",
+  "version": "1.0.0",
+  "description": "EOSIO MongoDB Queries",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src"
+  ],
+  "scripts": {
+    "test": "tslint --project .",
+    "prepare": "tsc",
+    "postpublish": "git push && git push --tags",
+    "docs": "tsc && documentation readme index.js --section=API"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOS-BP-Developers/eosio-mongodb-queries.git"
+  },
+  "keywords": [
+    "eosio",
+    "database",
+    "mongodb",
+    "mongo",
+    "eos"
+  ],
+  "author": "EOS BP Developers",
+  "contributors": [
+    "Denis Carriere <denis@eosnation.io>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EOS-BP-Developers/eosio-mongodb-queries/issues"
+  },
+  "homepage": "https://github.com/EOS-BP-Developers/eosio-mongodb-queries#readme",
+  "devDependencies": {
+    "@types/bson": "*",
+    "@types/dotenv": "*",
+    "@types/mongodb": "*",
+    "@types/node": "*",
+    "documentation": "*",
+    "dotenv": "*",
+    "mongodb": "*",
+    "tslint": "*",
+    "typescript": "*"
+  }
+}
